@@ -67,8 +67,8 @@ def get_univ_rank(driver, univ_info, univ_rank_map):
         raise TypeError("univ_info and univ_rank_map should be dict format")
 
     # This is restricted to the "qsranking website" 
-    # driver.find_element_by_xpath("//div[@class='dataTables_length']/label/span/span[@class='jcf-select-opener']").click()
-    # driver.find_element_by_xpath("//div[@class='jcf-select-drop jcf-select-jcf-hidden jcf-unselectable']/div/span/span/ul/li/span[text()='All']").click()
+    driver.find_element_by_xpath("//div[@class='dataTables_length']/label/span/span[@class='jcf-select-opener']").click()
+    driver.find_element_by_xpath("//div[@class='jcf-select-drop jcf-select-jcf-hidden jcf-unselectable']/div/span/span/ul/li/span[text()='All']").click()
 
     soup = BeautifulSoup(driver.page_source, 'lxml')
     rankTable = soup.find("table",{"id":"qs-rankings"})
