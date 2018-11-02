@@ -167,6 +167,16 @@ def crawling(drive_dir = default_drive_dir,
     univ_rank_info["univ_info"] = univ_info
     rank_info["default"] = ranks
     
+    # Get rank under the specifc country
+    rank_by_country = {}
+    for name, country in zip(univ_info["name"], univ_info["country"]):
+        if country not in rank_by_country:
+            rank_by_country[country] = []
+        rank_by_country[country].append(univ_rank_map[name])
+
+    rank_info["country"] = rank_by_country
+    print("Classify rank by country")
+
     # Get other subject ranking
     subject_href = get_subject_href(driver, subject_url)
 

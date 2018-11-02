@@ -13,7 +13,7 @@ This package is used for crawling of university rank. The current web page is ht
 In the json file, the main categories are **univ_info** and **ranks**.
 
 - `univ_info` : It includes name and country of each university.
-- `ranks` : It consists of rank information obtained under each subject condition. In the each rank, the indices of university corresponding to the **univ_info** list are stored. By using this index, we can get university information easily.
+- `ranks` : It consists of rank information obtained under each country and subject condition. In the each rank, the indices of university corresponding to the **univ_info** list are stored. By using this index, we can get university information easily.
  
 
 <p align="center">
