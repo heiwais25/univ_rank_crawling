@@ -15,4 +15,6 @@ In the json file, the main categories are **univ_info** and **ranks**.
 - `univ_info` : It includes name and country of each university.
 - `ranks` : It consists of rank information obtained under each subject condition. In the each rank, the indices of university corresponding to the **univ_info** list are stored. By using this index, we can get university information easily.
  
-<img src="./img/json_format_desc.png" alt="format_desc" width="600"/>
+<center><img src="./img/json_format_desc.png" alt="format_desc" width="600"/></center>
+
+<!-- ![format_desc](./img/json_format_desc.png | width=600)  -->
